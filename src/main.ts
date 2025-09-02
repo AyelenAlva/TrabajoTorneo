@@ -7,7 +7,7 @@ import { Partido } from "./models/Partido.js";
 import { Torneo } from "./models/Torneo.js";
 
 
-console.log("==== PRUEBAS TP TORNEOS ====");
+console.log("TORNEOS");
 
 
 const j1 = new Jugador("j1", "Ana", 22, "Delantera");
