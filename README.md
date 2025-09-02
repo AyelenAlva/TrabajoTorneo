@@ -34,17 +34,74 @@ Este proyecto modela un **torneo deportivo** aplicando conceptos de POO en **Typ
 
 ## Salida esperada (aproximada):
 
- TORNEOS 
-Esperado (duplicado en equipo): El jugador con id j2 ya pertenece al equipo Leones.
-Validación Fútbol → Tigres:true | Halcones:true
-Validación Básquet → Tigres:true | Halcones:true
-Partidos programados:
- -  [Fútbol] Tigres vs Leones
- -  [Básquet] Halcones vs Tigres
-Resultado p1: [Fútbol] Tigres vs Leones → 2 - 1
-Esperado (validación por deporte): No se puede jugar: equipos no válidos para Básquet (local válido: true, visitante válido: false).
-Esperado (local=visitante): Un partido no puede tener el mismo local y visitante.
-==== FIN PRUEBAS ====
+=== TORNEO INTERCLUBES ===
+
+--- Integrantes de Equipo A ---
+1. Jugador: Gabriel Batistuta, Edad: 55, Posición: Delantero
+2. Jugador: Juan Román Riquelme, Edad: 46, Posición: Centrocampista
+3. Jugador: Carlos Tevez, Edad: 40, Posición: Delantero
+4. Jugador: Javier Zanetti, Edad: 51, Posición: Defensor
+5. Jugador: Roberto Ayala, Edad: 52, Posición: Defensor
+6. Jugador: Ariel Ortega, Edad: 50, Posición: Delantero
+7. Jugador: Diego Simeone, Edad: 54, Posición: Centrocampista
+8. Jugador: Esteban Cambiasso, Edad: 44, Posición: Centrocampista
+9. Jugador: Martín Demichelis, Edad: 43, Posición: Defensor
+10. Jugador: Hernán Crespo, Edad: 49, Posición: Delantero
+11. Jugador: Pablo Aimar, Edad: 45, Posición: Centrocampista
+Cantidad de integrantes: 11
+
+--- Integrantes de Equipo B ---
+1. Jugador: Andrés Iniesta, Edad: 40, Posición: Centrocampista
+2. Jugador: Xavi Hernández, Edad: 45, Posición: Centrocampista
+3. Jugador: Gerard Piqué, Edad: 38, Posición: Defensor
+4. Jugador: Carles Puyol, Edad: 47, Posición: Defensor
+5. Jugador: David Villa, Edad: 43, Posición: Delantero
+6. Jugador: Iker Casillas, Edad: 44, Posición: Portero
+7. Jugador: Sergio Busquets, Edad: 36, Posición: Centrocampista
+8. Jugador: Fernando Torres, Edad: 41, Posición: Delantero
+9. Jugador: Jordi Alba, Edad: 36, Posición: Defensor
+10. Jugador: Cesc Fàbregas, Edad: 38, Posición: Centrocampista
+11. Jugador: Pedro Rodríguez, Edad: 38, Posición: Delantero
+12. Jugador: Jugador Extra, Edad: 30, Posición: Delantero
+Cantidad de integrantes: 12
+
+--- Integrantes de Equipo C ---
+1. Jugador: Facundo Campazzo, Edad: 33, Posición: Base
+2. Jugador: Luka Doncic, Edad: 26, Posición: Escolta
+3. Jugador: Nikola Jokic, Edad: 30, Posición: Pívot
+4. Jugador: Giannis Antetokounmpo, Edad: 30, Posición: Ala-pívot
+5. Jugador: Kawhi Leonard, Edad: 34, Posición: Alero
+Cantidad de integrantes: 5
+
+--- Integrantes de Equipo D ---
+1. Jugador: Stephen Curry, Edad: 37, Posición: Base
+2. Jugador: LeBron James, Edad: 40, Posición: Alero
+3. Jugador: Anthony Davis, Edad: 32, Posición: Pívot
+4. Jugador: James Harden, Edad: 36, Posición: Escolta
+5. Jugador: Jayson Tatum, Edad: 27, Posición: Alero
+Cantidad de integrantes: 5
+
+--- Validaciones de deporte (polimorfismo) ---
+Equipo Equipo A válido para fútbol? Válido
+Equipo Equipo A válido para básquet? No apto
+Equipo Equipo B válido para fútbol? No apto
+Equipo Equipo B válido para básquet? No apto
+Equipo Equipo C válido para fútbol? Válido
+Equipo Equipo D válido para fútbol? Válido
+Equipo Equipo D válido para básquet? Válido
+
+--- Lista de partidos programados ---
+[Fútbol] Equipo A (Delantero, Centrocampista, Delantero, Defensor, Defensor, Delantero, Centrocampista, Centrocampista, Defensor, Delantero, Centrocampista) vs Equipo B (Centrocampista, Centrocampista, Defensor, Defensor, Delantero, Portero, Centrocampista, Delantero, Defensor, Centrocampista, Delantero, Delantero)
+[Básquet] Equipo C (Base, Escolta, Pívot, Ala-pívot, Alero) vs Equipo D (Base, Alero, Pívot, Escolta, Alero)
+
+
+No se puede jugar el partido Fútbol entre Equipo A y Equipo B: equipos no válidos.
+
+[Básquet] Equipo C (Base, Escolta, Pívot, Ala-pívot, Alero) vs Equipo D (Base, Alero, Pívot, Escolta, Alero) → 25 - 12
+Ganador: Equipo C
+--- Lista final de partidos del Torneo ---
+[Fútbol] Equipo A (Delantero, Centrocampista, Delantero, Defensor, Defensor, Delantero, Centrocampista, Centrocampista, Defensor, Delantero, Centrocampista) vs Equipo B (Centrocampista, Centrocampista, Defensor, Defensor, Delantero, Portero, Centrocampista, Delantero, Defensor, Centrocampista, Delantero, Delantero)
+[Básquet] Equipo C (Base, Escolta, Pívot, Ala-pívot, Alero) vs Equipo D (Base, Alero, Pívot, Escolta, Alero) → 25 - 12
 
 # Conceptos aplicados
 
