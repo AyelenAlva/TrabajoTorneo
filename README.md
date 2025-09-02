@@ -1,4 +1,4 @@
-#TP Torneos (TypeScript)
+#   TP Torneos (TypeScript)
 
 Este proyecto modela un **torneo deportivo** aplicando conceptos de POO en **TypeScript**, incluye:
 
