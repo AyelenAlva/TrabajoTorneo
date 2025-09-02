@@ -1,0 +1,21 @@
+{
+  "name": "tp-torneos",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "tsx src/main.ts",
+    "build": "tsc -p .",
+    "start": "node dist/main.js",
+    "check": "tsc -p . --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
